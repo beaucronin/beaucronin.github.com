@@ -1,8 +1,11 @@
 ---
+
 permalink: metropolis-sampling-made-easy.html
 title: Metropolis sampling made easy
+layout:default
 
 ---
+
 # Metropolis Sampling Made Easy
 
 ## Introduction
