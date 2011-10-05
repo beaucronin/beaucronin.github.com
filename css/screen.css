@@ -103,9 +103,6 @@ ul.posts {
   margin-bottom: 2em;
 }
 
-  .site li {
-    margin-bottom: .5em;
-  }
 
   .site .title a {
     color: #a00;
@@ -178,6 +175,10 @@ ul.posts {
   #post ul,
   #post ol {
     margin-left: 1.35em;
+  }
+
+  #post li {
+    margin-bottom: .5em;
   }
 
   #post code {
