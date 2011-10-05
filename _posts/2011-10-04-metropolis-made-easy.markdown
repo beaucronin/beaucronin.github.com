@@ -52,11 +52,7 @@ In the following figures, I've changed the plotting so that each step is shown b
 
 Protip: The alpha channel is a very useful tool for showing the density of samples.
 
-I've also made a video of the sampler in action, which might give a better sense of the dynamics of the process. For the first 30 seconds, individual steps are shown; then, toward the end, 10 steps are added at a time. At the end of the video, several thousand steps have been plotted (and the output gets pretty messy...)
-
-<iframe width="480" height="360" src="http://www.youtube.com/embed/4I6TaYo9j_Y?rel=0" frameborder="0" allowfullscreen></iframe>
-
-## Getting independent samples
+I've also made a [video of the sampler in action](http://www.youtube.com/embed/4I6TaYo9j_Y?rel=0), which might give a better sense of the dynamics of the process. For the first 30 seconds, individual steps are shown; then, toward the end, 10 steps are added at a time. At the end of the video, several thousand steps have been plotted (and the output gets pretty messy...)
 
 ## Next steps: generalizations and extensions
 
