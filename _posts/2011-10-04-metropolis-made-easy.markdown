@@ -28,7 +28,10 @@ In pythonic pseudocode, this looks like this:
 In general, the target distribution is going to be a function of both the parameters and the observed data - possibly a very complicated function. All of these details can matter quite a bit when you're trying to improve the performance of your sampler (by coming up with better proposals, for example), but for now we'll keep things simple.
 
 FIXME The meaning of the target distribution
+
 FIXME The meaning of the proposal distribution
+
+FIXME Requirements on the target and proposal to ensure correctness
 
 ## Running the sampler and looking at the output
 We'll start the sampler at (0, 0) and run it for 10 steps:
@@ -52,7 +55,7 @@ In the following figures, I've changed the plotting so that each step is shown b
 
 Protip: The alpha channel is a very useful tool for showing the density of samples.
 
-I've also made a [video of the sampler in action](http://www.youtube.com/embed/4I6TaYo9j_Y?rel=0), which might give a better sense of the dynamics of the process. For the first 30 seconds, individual steps are shown; then, toward the end, 10 steps are added at a time. At the end of the video, several thousand steps have been plotted (and the output gets pretty messy...)
+I've also made a [video of the sampler in action](http://www.youtube.com/watch?v=4I6TaYo9j_Y), which might give a better sense of the dynamics of the process. For the first 30 seconds, individual steps are shown; then, toward the end, 10 steps are added at a time. At the end of the video, several thousand steps have been plotted (and the output gets pretty messy...)
 
 ## Next steps: generalizations and extensions
 
