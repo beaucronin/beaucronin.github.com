@@ -74,4 +74,5 @@ That said, here are a few of the ways in which samplers typically become more co
 
 [^1]: MCMC methods are themselves part of the larger family of "Monte Carlo" inference methods, 
       distinguished by their reliance on random exploration of a space of hypotheses.
+
 [^2]: Protip: The alpha channel is a very useful tool for showing the density of samples.
