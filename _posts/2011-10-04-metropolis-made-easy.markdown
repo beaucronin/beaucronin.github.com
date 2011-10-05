@@ -1,3 +1,8 @@
+---
+permalink: metropolis-sampling-made-easy.html
+title: Metropolis sampling made easy
+
+---
 # Metropolis Sampling Made Easy
 
 ## Introduction
