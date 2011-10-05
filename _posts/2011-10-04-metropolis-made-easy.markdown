@@ -37,16 +37,16 @@ In this picture and those that follow, each dot represents the location of the p
 
 Now, as we add more and more steps, we see that the collection starts to approximate the target distribution:
 
-![image](metropolis_out/out_2.png)
-![image](metropolis_out/out_3.png)
-![image](metropolis_out/out_4.png)
-![image](metropolis_out/out_5.png)
+![image](img/metropolis/out_2.png)
+![image](img/metropolis/out_3.png)
+![image](img/metropolis/out_4.png)
+![image](img/metropolis/out_5.png)
 
 In the following figures, I've changed the plotting so that each step is shown by a translucent dot, and the connecting lines are omitted for clarity. This kind of plot gives a more direct sense of the spatial density of the samples - higher-probabilty regions are darker - and it becomes increasingly obvious that the sampler is providing a better and better approximation of the target distribution:
 
-![image](metropolis_out/out_6.png)
-![image](metropolis_out/out_7.png)
-![image](metropolis_out/out_8.png)
+![image](img/metropolis/out_6.png)
+![image](img/metropolis/out_7.png)
+![image](img/metropolis/out_8.png)
 
 Protip: The alpha channel is a very useful tool for showing the density of samples.
 
