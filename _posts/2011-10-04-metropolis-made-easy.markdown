@@ -25,16 +25,16 @@ In pythonic pseudocode, this looks like this:
 
 <script src="https://gist.github.com/1258210.js?file=gistfile1.py"></script>
 
-In general, the target distribution is going to be a function of both the parameters and the observed data - possibly a very complicated function. All of these details can matter quite a bit when you're trying to improve the performance of your sampler (by coming up with better proposals, for example), but for now we'll keep things simple.
+While Metropolis sampling can be used in many applications, it is very commonly applied in **Bayesian statistical inference**.  In this setting, the target distribution is usually the **posterior distribution** on the model parameters.  That is, the space that we are searching through, denoted by `x` in the pseudocode above, corresponds to the parameters of the model. The target distribution is therefore a function of the observed data and the prior distribution on those parameters. 
 
-FIXME The meaning of the target distribution
+The proposal distribution is the most interesting aspect of the Metropolis sampler. As long as some very general requirements are obeyed, the proposal distribution can be anything and the sampler will be guaranteed to explore the entire target distribution if it is run long enough. But the key phrase there is *if it is run long enough* -- a sampler with a poorly-chosen proposal scheme will take until the end of time to sample from even a simple target distribution.
 
-FIXME The meaning of the proposal distribution
+In a Metropolis sampler, the proposal distribution must be *symmetric* -- i.e., the probability of moving from `x` to `x*` must be the same as moving from `x*` to `x`.  The normal distribution centered on the 
 
-FIXME Requirements on the target and proposal to ensure correctness
+Code for a simple but complete Metropolis sampler is [here](https://github.com/beaucronin/npblog_code/blob/master/examples/metropolis.py). In the next section, we'll take a look at the output of that sampler, as plotted with some [simple matplotlib commands](https://github.com/beaucronin/npblog_code/blob/master/examples/make_metropolis_plots.py).
 
 ## Running the sampler and looking at the output
-We'll start the sampler at (0, 0) and run it for 10 steps:
+First, we'll start the sampler at (0, 0) and run it for 10 steps:
 
 ![image](img/metropolis/out_1.png)
 
@@ -47,15 +47,15 @@ Now, as we add more and more steps, we see that the collection starts to approxi
 ![image](img/metropolis/out_4.png)
 ![image](img/metropolis/out_5.png)
 
-In the following figures, I've changed the plotting so that each step is shown by a translucent dot, and the connecting lines are omitted for clarity. This kind of plot gives a more direct sense of the spatial density of the samples - higher-probabilty regions are darker - and it becomes increasingly obvious that the sampler is providing a better and better approximation of the target distribution:
+In the following figures, I've changed the plotting so that each step is shown by a translucent dot, and the connecting lines are omitted for clarity.[^2] This kind of plot gives a more direct sense of the spatial density of the samples - higher-probabilty regions are darker - and it becomes increasingly obvious that the sampler is providing a better and better approximation of the target distribution:
 
 ![image](img/metropolis/out_6.png)
 ![image](img/metropolis/out_7.png)
 ![image](img/metropolis/out_8.png)
 
-Protip: The alpha channel is a very useful tool for showing the density of samples.
+I've also made a [video of the sampler in action](http://www.youtube.com/watch?v=4I6TaYo9j_Y), which might give a better sense of the dynamics of the sampling process. For the first 30 seconds or so, each video frame corresponds to a single step; then, toward the end, 10 steps are added at a time. At the end of the video, several thousand steps have been plotted.
 
-I've also made a [video of the sampler in action](http://www.youtube.com/watch?v=4I6TaYo9j_Y), which might give a better sense of the dynamics of the process. For the first 30 seconds, individual steps are shown; then, toward the end, 10 steps are added at a time. At the end of the video, several thousand steps have been plotted (and the output gets pretty messy...)
+## Proposals and acceptance rates
 
 ## Next steps: generalizations and extensions
 
@@ -70,6 +70,8 @@ That said, here are a few of the ways in which samplers typically become more co
 
 ## References and Resources
 - The [original Metropolis sampling paper](http://home.gwu.edu/~stroud/classics/Metropolis53.pdf) - checking out the author list!
+- The code for this post can be found [here](https://github.com/beaucronin/npblog_code). Happy hacking!
 
 [^1]: MCMC methods are themselves part of the larger family of "Monte Carlo" inference methods, 
       distinguished by their reliance on random exploration of a space of hypotheses.
+[^2]: Protip: The alpha channel is a very useful tool for showing the density of samples.
