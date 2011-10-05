@@ -23,6 +23,10 @@ body {
   text-align: center;
 }
 
+strong {
+  font-weight: 300;
+}
+
 h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
