@@ -8,7 +8,7 @@ layout: post
 # Metropolis Sampling Made Easy
 
 ## Introduction
-Metropolis sampling is one of a family of inference methods, collectively known as Markov chain Monte Carlo (**MCMC**) [^1].  In its most fundamental form, Metropolis sampling is very simple - it can be implemented in just a few lines of code. But the basic recipe can be used as a building block in very sophisticated and powerful inference schemes.
+Metropolis sampling is one of a family of inference methods, collectively known as Markov chain Monte Carlo (**MCMC**). [^1]  In its most fundamental form, Metropolis sampling is very simple - it can be implemented in just a few lines of code. But the basic recipe can be used as a building block in very sophisticated and powerful inference schemes.
 
 MCMC is one of the fundamental approaches to sampling. In general, it can be very hard to draw random samples from complex, high-dimensional probability distributions. MCMC methods get around this by taking a random walk through the space defined by the parameters of the distribution in question. Through the miracle of **detailed balance**, they guarantee that - if run long enough - they will explore the space in proportion to its probability density.
 
@@ -47,7 +47,7 @@ Now, as we add more and more steps, we see that the collection starts to approxi
 ![image](img/metropolis/out_4.png)
 ![image](img/metropolis/out_5.png)
 
-In the following figures, I've changed the plotting so that each step is shown by a translucent dot, and the connecting lines are omitted for clarity.[^2] This kind of plot gives a more direct sense of the spatial density of the samples - higher-probabilty regions are darker - and it becomes increasingly obvious that the sampler is providing a better and better approximation of the target distribution:
+In the following figures, I've changed the plotting so that each step is shown by a translucent dot, and the connecting lines are omitted for clarity. [^2] This kind of plot gives a more direct sense of the spatial density of the samples - higher-probabilty regions are darker - and it becomes increasingly obvious that the sampler is providing a better and better approximation of the target distribution:
 
 ![image](img/metropolis/out_6.png)
 ![image](img/metropolis/out_7.png)
