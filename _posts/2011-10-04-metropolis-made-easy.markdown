@@ -8,7 +8,7 @@ layout: post
 # Metropolis Sampling Made Easy
 
 ## Introduction
-Metropolis sampling is one of a family of inference methods, collectively known as Markov chain Monte Carlo (**MCMC**). [^1]  In its most fundamental form, Metropolis sampling is very simple - it can be implemented in just a few lines of code. But the basic recipe can be used as a building block in very sophisticated and powerful inference schemes.
+Metropolis sampling is one of a family of inference methods, collectively known as Markov chain Monte Carlo (**MCMC**).[^1]  In its most fundamental form, Metropolis sampling is very simple - it can be implemented in just a few lines of code. But the basic recipe can be used as a building block in very sophisticated and powerful inference schemes.
 
 MCMC is one of the fundamental approaches to sampling. In general, it can be very hard to draw random samples from complex, high-dimensional probability distributions. MCMC methods get around this by taking a random walk through the space defined by the parameters of the distribution in question. Through the miracle of **detailed balance**, they guarantee that - if run long enough - they will explore the space in proportion to its probability density.
 
@@ -25,13 +25,15 @@ In pythonic pseudocode, this looks like this:
 
 <script src="https://gist.github.com/1258210.js?file=gistfile1.py"></script>
 
+FIXME discuss acceptance rule, acceptance rate
+
 While Metropolis sampling can be used in many applications, it is very commonly applied in **Bayesian statistical inference**.  In this setting, the target distribution is usually the **posterior distribution** on the model parameters.  That is, the space that we are searching through, denoted by `x` in the pseudocode above, corresponds to the parameters of the model. The target distribution is therefore a function of the observed data and the prior distribution on those parameters. 
 
 The proposal distribution is the most interesting aspect of the Metropolis sampler. As long as some very general requirements are obeyed, the proposal distribution can be anything and the sampler will be guaranteed to explore the entire target distribution if it is run long enough. But the key phrase there is *if it is run long enough* -- a sampler with a poorly-chosen proposal scheme will take until the end of time to sample from even a simple target distribution.
 
-In a Metropolis sampler, the proposal distribution must be *symmetric* -- i.e., the probability of moving from `x` to `x*` must be the same as moving from `x*` to `x`.  The normal distribution centered on the 
+In a Metropolis sampler, the proposal distribution must be *symmetric* -- i.e., the probability of moving from `x` to `x*` must be the same as moving from `x*` to `x`.  Our sampler will use a normal distribution centered on the current value of `x`, which does satisfy this requirement. A generalization of the Metropolis sampling algorithm, called Metropolis-Hastings, removes this constraint at the expense of some added complexity in the acceptance rule.
 
-Code for a simple but complete Metropolis sampler is [here](https://github.com/beaucronin/npblog_code/blob/master/examples/metropolis.py). In the next section, we'll take a look at the output of that sampler, as plotted with some [simple matplotlib commands](https://github.com/beaucronin/npblog_code/blob/master/examples/make_metropolis_plots.py).
+Code for a simple but complete Metropolis sampler is [here](https://github.com/beaucronin/npblog_code/blob/master/examples/metropolis.py). In the next section, we'll take a look at the output of that sampler, as plotted with some [simple matplotlib commands](https://github.com/beaucronin/npblog_code/blob/master/examples/make_metropolis_plots.py).[^3]
 
 ## Running the sampler and looking at the output
 First, we'll start the sampler at (0, 0) and run it for 10 steps:
@@ -47,7 +49,7 @@ Now, as we add more and more steps, we see that the collection starts to approxi
 ![image](img/metropolis/out_4.png)
 ![image](img/metropolis/out_5.png)
 
-In the following figures, I've changed the plotting so that each step is shown by a translucent dot, and the connecting lines are omitted for clarity. [^2] This kind of plot gives a more direct sense of the spatial density of the samples - higher-probabilty regions are darker - and it becomes increasingly obvious that the sampler is providing a better and better approximation of the target distribution:
+In the following figures, I've changed the plotting so that each step is shown by a translucent dot, and the connecting lines are omitted for clarity.[^2] This kind of plot gives a more direct sense of the spatial density of the samples - higher-probabilty regions are darker - and it becomes increasingly obvious that the sampler is providing a better and better approximation of the target distribution:
 
 ![image](img/metropolis/out_6.png)
 ![image](img/metropolis/out_7.png)
@@ -72,6 +74,7 @@ That said, here are a few of the ways in which samplers typically become more co
 
 - The [original Metropolis sampling paper](http://home.gwu.edu/~stroud/classics/Metropolis53.pdf) - checking out the author list!
 - The code for this post can be found [here](https://github.com/beaucronin/npblog_code). Happy hacking!
+- numpy, scipy, and matplotlib can be a real pain to get working on Mac OS; I've found that Chris Fonnesbeck's [scipy Superpack](http://stronginference.com/scipy-superpack/) is *the* way to get these packages installed on the mac with all the dependencies and versions taken care of. Chris is one the authors of [PyMC](http://code.google.com/p/pymc/), and his [blog](http://stronginference.com/) is a great source of sophisticated commentary on Monte Carlo sampling methods.
 
 ## Footnotes
 
@@ -79,3 +82,5 @@ That said, here are a few of the ways in which samplers typically become more co
       distinguished by their reliance on random exploration of a space of hypotheses.
 
 [^2]: Protip -- The alpha channel is a very useful tool for showing the density of samples.
+
+[^3]: See the resources section for more on installing matplotlib on the mac.
