@@ -31,7 +31,7 @@ FIXME The meaning of the proposal distribution
 ## Running the sampler and looking at the output
 We'll start the sampler at (0, 0) and run it for 10 steps:
 
-![image](metropolis_out/out_1.png)
+![image](img/metropolis/out_1.png)
 
 In this picture and those that follow, each dot represents the location of the parameters at the end of each step. The dashed lines connect subsequent steps, so that you can get a sense for how the sampler is moving around in parameter space from one step to the next. Note that there are fewer dots than steps, because the location does not change on those steps where the proposal is rejected.
 
