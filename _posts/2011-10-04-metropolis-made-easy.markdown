@@ -69,10 +69,13 @@ That said, here are a few of the ways in which samplers typically become more co
 4. Real-world samplers often include several inference techniques in concert. Part of the art of probabilistic inference programming is learning how to use the many available tools strike the right tradeoff between implementation effort and computational efficiency, and learning to mix and match as needed. Metropolis sampling is one of these basic tools, but there are some other important ones as well.
 
 ## References and Resources
+
 - The [original Metropolis sampling paper](http://home.gwu.edu/~stroud/classics/Metropolis53.pdf) - checking out the author list!
 - The code for this post can be found [here](https://github.com/beaucronin/npblog_code). Happy hacking!
+
+## Footnotes
 
 [^1]: MCMC methods are themselves part of the larger family of "Monte Carlo" inference methods, 
       distinguished by their reliance on random exploration of a space of hypotheses.
 
-[^2]: Protip: The alpha channel is a very useful tool for showing the density of samples.
+[^2]: Protip -- The alpha channel is a very useful tool for showing the density of samples.
