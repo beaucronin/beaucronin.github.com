@@ -8,7 +8,7 @@ layout: post
 # Metropolis Sampling Made Easy
 
 ## Introduction
-Metropolis sampling is one of a family of inference methods, collectively known as Markov chain Monte Carlo (**MCMC**) [foot: MCMC methods are themselves part of the larger family of "Monte Carlo" inference methods, distinguished by their reliance on random exploration of a space of hypotheses].  In its most fundamental form, Metropolis sampling is very simple - it can be implemented in just a few lines of code. But the basic recipe can be used as a building block in very sophisticated and powerful inference schemes.
+Metropolis sampling is one of a family of inference methods, collectively known as Markov chain Monte Carlo (**MCMC**) [^1].  In its most fundamental form, Metropolis sampling is very simple - it can be implemented in just a few lines of code. But the basic recipe can be used as a building block in very sophisticated and powerful inference schemes.
 
 MCMC is one of the fundamental approaches to sampling. In general, it can be very hard to draw random samples from complex, high-dimensional probability distributions. MCMC methods get around this by taking a random walk through the space defined by the parameters of the distribution in question. Through the miracle of **detailed balance**, they guarantee that - if run long enough - they will explore the space in proportion to its probability density.
 
@@ -67,3 +67,6 @@ That said, here are a few of the ways in which samplers typically become more co
 
 ## References and Resources
 - The [original Metropolis sampling paper](http://home.gwu.edu/~stroud/classics/Metropolis53.pdf) - checking out the author list!
+
+[^1]: MCMC methods are themselves part of the larger family of "Monte Carlo" inference methods, 
+      distinguished by their reliance on random exploration of a space of hypotheses.
