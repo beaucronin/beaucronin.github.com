@@ -70,6 +70,7 @@ I've also made a [video of the sampler in action](http://www.youtube.com/watch?v
 
 ## Proposals and acceptance rates
 
+![image](img/metropolis/metropolis_jumpsize_0.png)
 ![image](img/metropolis/metropolis_jumpsize_1.png)
 ![image](img/metropolis/metropolis_jumpsize_2.png)
 ![image](img/metropolis/metropolis_jumpsize_3.png)
@@ -77,7 +78,6 @@ I've also made a [video of the sampler in action](http://www.youtube.com/watch?v
 ![image](img/metropolis/metropolis_jumpsize_5.png)
 ![image](img/metropolis/metropolis_jumpsize_6.png)
 ![image](img/metropolis/metropolis_jumpsize_7.png)
-![image](img/metropolis/metropolis_jumpsize_8.png)
 
 
 ## Next steps: generalizations and extensions
