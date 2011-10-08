@@ -1,6 +1,6 @@
 ---
 title: Different ways of representing generative models
-permalink: representing-generative-models
+permalink: representing-generative-models.html
 layout: post
 published: True
 
