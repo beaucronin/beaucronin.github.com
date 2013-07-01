@@ -68,6 +68,9 @@ table {
 /*
 /*****************************************************************************/
 
+ul {
+  list-style-type: none;
+}
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
