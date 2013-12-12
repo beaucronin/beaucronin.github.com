@@ -53,6 +53,8 @@ In short, everything that can be meaningfully metered is being used by someone a
 
 ## The Machine Learning Value Chain
 
+![image](img/MLValueChain.001.png)
+
 Many startups that think of themselves as providing machine learning products and solutions are, naturally, focused quite heavily on the model-building and querying phases of the overall process. But it's important to note that these phases are just a fraction of the overall value chain that stretches from the collection of raw data to the ultimate solution of a business problem. 
 
 Let's take a quick tour of this chain to see what is at risk of being ignored.
