@@ -7,7 +7,7 @@ layout: post
 
 # Machine Learning Companies
 
-I've helped build two machine learning companies in the last few years. It's hard to do: ML is temperamental technology, and while it's pretty straightforward for talented data scientists and engineers to execute one-off projects, the methods themselves are difficult to productize. For this and other reasons, it's tough to build a scalable business around machine learning itself.
+I've helped build two machine learning companies in the last few years. It's hard to do: ML is temperamental technology, and while it's pretty straightforward for talented data scientists and engineers to execute one-off projects, the methods are difficult to truly *productize*. For this and other reasons, it's tough to build a scalable business around machine learning.
 
 But this hasn't stopped a lot more people from trying recently, so I thought I'd write up some notes to describe how I think about this space now.
 
@@ -52,8 +52,6 @@ As an alternative, many of these new offerings are trying a version of the AWS m
 In short, everything that can be meaningfully metered is being used by someone as a pricing unit: consulting and support hours, API calls made, data amounts cranked, software licenses, and server cores. My sense is that the business models in this space need at least as much innovation and experimentation as the products and technology.
 
 ## The Machine Learning Value Chain
-
-![image](img/MLValueChain.001.png)
 
 Many startups that think of themselves as providing machine learning products and solutions are, naturally, focused quite heavily on the model-building and querying phases of the overall process. But it's important to note that these phases are just a fraction of the overall value chain that stretches from the collection of raw data to the ultimate solution of a business problem. 
 
