@@ -87,14 +87,14 @@ And the potential customers that *do* have this kind of algorithmic expertise on
 
 Here are some working conclusions I've drawn after spending a few years in this space. 
 
-* [There's a bit of confusion](https://twitter.com/johnmyleswhite/status/409377138836398080) on the part of highly technical data scientists and algorithmic engineers about what is the value of the new crop of machine learning services. What do they really get from machine learning "in the cloud" that they can't obtain more easily and reliably from the many libraries and frameworks available? 
+1. [There's a bit of confusion](https://twitter.com/johnmyleswhite/status/409377138836398080) on the part of highly technical data scientists and algorithmic engineers about what is the value of the new crop of machine learning services. What do they really get from machine learning "in the cloud" that they can't obtain more easily and reliably from the many libraries and frameworks available? 
 
     For this reason, I think these services must look beyond these most sophisticated folks to find their user base: web developers, business users, SQL jockeys, something.
 
-* The kind of people who found ML startups are quick to identify (and fixate on) abstractions and generality - in short, all the ways in which different ML use cases are all the same. Through the right lens, predicting customer attrition, prioritizing sales leads, and predicting employee success can seem really similar - and these similarities will seem really intriguing (we don't have to choose! we can address all these use cases with one product!). This is dangerous, because it does not take into account the top of the value chain.
+2. The kind of people who found ML startups are quick to identify (and fixate on) abstractions and generality - in short, all the ways in which different ML use cases are all the same. Through the right lens, predicting customer attrition, prioritizing sales leads, and predicting employee success can seem really similar - and these similarities will seem really intriguing (we don't have to choose! we can address all these use cases with one product!). This is dangerous, because it does not take into account the top of the value chain.
 
-* Any MLaaS company will need to reckon with Amazon's likely and imminent entry - just providing the basic capabilities, however convenient, elastic, and powerful, will no longer be enough.
+3. Any MLaaS company will need to reckon with Amazon's likely and imminent entry - just providing the basic capabilities, however convenient, elastic, and powerful, will no longer be enough.
 
-* Raw ML capability is not a thing that anyone wants to buy. Business folks - including the people with the budget to spend - want to buy solutions to business problems; machine learning is, at most, a tactic to employ along the way. And developers, whether data scientists/engineers or algorithmic folks, don't see why ML is something they should pay for - especially when there are so many seemingly high quality open libraries and frameworks out there.
+4. Raw ML capability is not a thing that anyone wants to buy. Business folks - including the people with the budget to spend - want to buy solutions to business problems; machine learning is, at most, a tactic to employ along the way. And developers, whether data scientists/engineers or algorithmic folks, don't see why ML is something they should pay for - especially when there are so many seemingly high quality open libraries and frameworks out there.
 
 Let me know what you think; you can find me on twitter [@beaucronin](https://twitter.com/beaucronin).
