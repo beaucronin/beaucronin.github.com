@@ -1,3 +1,10 @@
+---
+permalink: generative-logs.html
+title: Stochastic Models of Log Data
+layout: post
+
+---
+
 Events happen in the world, and they have causes. In some cases, those events are captured or measured, and therefore recorded by machines. A timestamped collection of these events comprises a log. Some log entries are deeply rooted in time - an event occurred in the world, and it was recorded - while in other cases the timestamp is more incidental, such as noting the time at which a database record was updated. 
 
 Typically, though, the data that we feed into machine learning systems - classification, clustering, and so on - is highly processed or aggregated from the form in which it was originally captured. It is cleaned, filtered aggregated, and otherwise transformed. This is because our ML methods have very particular expectations about the overall form and the detailed content of their inputs. In most cases, they want tables, matrices, or graphs of clean, homogeneous data.
