@@ -5,8 +5,6 @@ layout: post
 
 ---
 
-# Deep Learning Business Models
-
 The DeepMind acquisition was the starting gun for a deep learning startup goldrush. Here is a brief tour of the models these new companies might adopt; most rest on the assumption that there is a big opportunity in bringing deep learning “to the masses” - i.e., all of the companies and startups that could benefit from the technology, but don’t have the in-house expertise that Google, Facebook, Yahoo, and Microsoft do. I know of companies in each category, but I won’t name names since some of them are unannounced.
 
 - **Sell hardware**. With the death of single-core speed improvements, startups in a number of areas are exploring alternative (i.e., non-von Neumann) computing architectures; deep learning is no exception. 
@@ -35,4 +33,4 @@ The DeepMind acquisition was the starting gun for a deep learning startup goldru
 
 There’s lots more to say, but this is one of those cases where I’ll never get this out if I don’t post it as-is.
 
-Tell me what you think on [twitter].
+Tell me what you think on [twitter](http://twitter.com/beaucronin).
