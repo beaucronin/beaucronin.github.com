@@ -11,7 +11,7 @@ I think they key issues are as follows:
 
 1. Deep learning requires very large training sets, and these shouldn't be shipped around a lot.
 
-2. No one knows which applications deep learning will dominate: maybe just the ones it's already doing well, maybe a few additional ones, maybe a large number. This has a big effect on business model, and there is real uncertainty here.
+2. No one knows which applications deep learning will dominate: maybe just the ones it's already doing well, maybe a few additional ones, maybe a large number. This has a big effect on business model (viability of platform vs. vertical), and there is real uncertainty here that will not be eliminated for some time.
 
 3. Lots of experience is required in getting deep learning to work well on a given application; the people who can do it well are those who have been at it for a while, and they tend to come from a handful of places. This will change, but the rate of diffusion of expertise is unknown and will also have an impact on business options.
 
