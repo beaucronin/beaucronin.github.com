@@ -5,7 +5,17 @@ layout: post
 
 ---
 
-The DeepMind acquisition was the starting gun for a deep learning startup goldrush. Here is a brief tour of the models these new companies might adopt; most rest on the assumption that there is a big opportunity in bringing deep learning “to the masses” - i.e., all of the companies and startups that could benefit from the technology, but don’t have the in-house expertise that Google, Facebook, Yahoo, and Microsoft do. I know of companies in each category, but I won’t name names since some of them are unannounced.
+The DeepMind acquisition was the starting gun for a deep learning startup goldrush. Most of the new companies are driven by the assumption that there is a big opportunity in bringing deep learning “to the masses” - i.e., all of the companies and startups that could benefit from the technology, but don’t have the in-house expertise that Google, Facebook, Yahoo, and Microsoft do. 
+
+I think they key issues are as follows:
+
+1. Deep learning requires very large training sets, and these shouldn't be shipped around a lot.
+
+2. No one knows which applications deep learning will dominate: maybe just the ones it's already doing well, maybe a few additional ones, maybe a large number. This has a big effect on business model, and there is real uncertainty here.
+
+3. Lots of experience is required in getting deep learning to work well on a given application; the people who can do it well are those who have been at it for a while, and they tend to come from a handful of places. This will change, but the rate of diffusion of expertise is unknown and will also have an impact on business options.
+
+Here is a brief tour of the different models; I know of companies in each category, but I won’t name names since some of them are unannounced.
 
 - **Sell hardware**. With the death of single-core speed improvements, startups in a number of areas are exploring alternative (i.e., non-von Neumann) computing architectures; deep learning is no exception. 
 
