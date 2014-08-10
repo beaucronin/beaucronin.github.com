@@ -1,0 +1,16 @@
+---
+permalink: oculus-rift-applied-neuroscience.html
+title: The Oculus Rift Is An Applied Neuroscience Powerhouse
+layout: post
+
+---
+
+A couple weeks ago I [noted](https://twitter.com/beaucronin/status/494313455281651712) that the Oculus Rift [Best Practices Guide](http://static.oculusvr.com/sdk-downloads/documents/OculusBestPractices.pdf) (BPG) is probably the most substantial document ever written on applied sensorimotor neuroscience. I’ve been thinking a bit more about this, and here are some quick notes.
+
+1. While many neuroscientists now subscribe to some form of the [Bayesian brain hypothesis](https://www.youtube.com/watch?v=jgD8zWxaDu0), the Oculus in general and the BPG in particular make this stance far easier for the layperson to grok. The Rift succeeds in creating presence because it brings multiple important sensory cues into “sync”, and this tips our sensorimotor system into a new *posterior mode*. That is, the most likely explanation that our brain is able to find for the sensory input it is receiving corresponds to the one provided by the simulation - and once the brain “buys in”, it does so enthusiastically. This is completely different from our experience of traditional games or cinema, even with advanced gear.
+
+2. As a corollary, the BPG makes clear just how constrained our sensory stimuli are - and how profoundly our brains react when we are faced with stimuli that our bodies would never encounter in the physical world, even when the divergence is quite minimal. It’s easy to forget or lose track of just how strongly our model of the world (our learned *prior*) shapes our experience, and it’s fascinating to see what happens when that model is violated. One way of reading the BPG is as a catalog of such violations - a list of “thou shalt nots”.
+
+3. System designers will learn to make exquisite use of the fact that Oculus (plus other input devices) can convince our sensorimotor system that it is operating in the simulation world. Yes, this can provide unusual and exciting experiences - via games, immersive cinema, and “courtside” views. But we can go much further in leveraging the quotidian spatiotemporal genius of the human brain. Beyond navigating the level of a FPS game, we can explore spaces defined by data streams and structures - i.e., constructs that have till now been too abstract for intuitive manipulation. We will eventually use VR to solve abstract problems by mapping them into the spatiotemporal domains in which we are all experts, though “solving” one of these problems might seem no harder than walking to the store to get some milk.
+
+4. Given all of this, I would be surprised if the Oculus weren’t quickly integrated into [psychophysics](http://en.wikipedia.org/wiki/Psychophysics) experiments. The basic idea would be to quantify exactly how far out of whack different sensory cues need to be before “presence” is lost. How much does this vary from one subjec to the next? Which cues are most important in maintaining presence? What are the perceptual consequences of discordant cues? Smart sensorimotor neuroscientists will get on this train quickly, and catapult their field into far more relevance than it has enjoyed in the past.
